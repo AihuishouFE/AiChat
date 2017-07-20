@@ -20,7 +20,7 @@ app.get('*', function(req, res) {
 
 
 // 这边一定是server
-server.listen(3000, function(err) {
+server.listen(9999, function(err) {
 	if (err) {
 		return console.error(err);
 	}
