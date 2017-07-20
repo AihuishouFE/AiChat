@@ -46,6 +46,10 @@ class ChattingRoom extends Component {
         this.openNotification(obj);
         break;
       case 'logout':
+        this.setState({
+          onlineCount: obj.onlineCount,
+          buddiesList: obj.onlineBuddies
+        });
         this.openNotification(obj, action);
         break;
     }
