@@ -8,7 +8,7 @@ class MessageBox extends Component {
 
   componentDidUpdate() {
     const messageBox = ReactDOM.findDOMNode(this.refs.messageBox);
-    window.scrollTo(0, messageBox.clientHeight + 50);
+    messageBox.scrollTop = messageBox.scrollHeight;
   }
 
   render() {
